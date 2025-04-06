@@ -37,7 +37,7 @@
     <header>
         <nav class="nav full-nav">
             <div>
-                <img src="images/S&L_logo.png" alt="alvins logo" style="width: 6.35rem;"
+                <img src="images/S&L_logo.png" alt="Sharu n Leo logo" style="width: 6.35rem;"
                     loading="lazy">
             </div>
             <div>
@@ -51,7 +51,7 @@
         <!-- mobile -->
         <nav class="nav mobile-nav">
             <div>
-                <img src="images/S&L_logo.png" alt="alvins logo" style="width: 1.5rem;">
+                <img src="images/S&L_logo.png" alt="Sharu n leo logo" style="width: 1.5rem;">
             </div>
             <div>
                 <i class="fa-solid fa-bars" title="button to open navigation" onclick="on()"></i>
@@ -59,18 +59,18 @@
         </nav>
     </header>
     <main>
-  <h1>Guess the Image!</h1>
-  <img id="quiz-image" src="" style="width: 30%; height: auto; left: 35%;" class="date_image" alt="Guess this" />
+  <h1>Guess the Date of the Image!</h1>
+  <img id="quiz-image" src="" style="width: 40%; height: auto; left: 35%;" class="date_image" alt="Guess this" />
   <br>
-  <input type="text" id="user-input" placeholder="Your guess here" />
-  <button onclick="submitAnswer()">Submit</button>
+  <input type="text" id="user-input" style="position: relative; left:40%; padding: 1rem 1rem;;" placeholder="Your guess here" />
+  <button class="submit-btn" onclick="submitAnswer()">Submit</button>
   <p id="feedback"></p>
-  <p id="score">Score: 0</p>
+  <p id="score" class="displayed_score">Score: 0</p>
 </main>
   <script src="dates.js"></script>
   <footer>
     <div>
-        <img src="images/S&L_logo.png" alt="alvins logo" style="width: 20vw;" loading="lazy">
+        <img src="images/S&L_logo.png" alt="Sharu and leo" style="width: 20vw;" loading="lazy">
     </div>
     <div>
         <div>
@@ -84,7 +84,7 @@
         </div>
     </div>
     <div>
-        <img src="images/whatsapp_logo.png" alt="alvins instagram logo" style="width: 10%;" loading="lazy">
+        <img src="images/whatsapp_logo.png" alt="Whatsapp logo" style="width: 10%;" loading="lazy">
     </div>
 </footer>
 </body>
