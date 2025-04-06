@@ -251,8 +251,9 @@ const questions = [
         answer: "Beach Date"
       },
   ];
-    let timeLeft = 30; // seconds
+  let timeLeft = 30; 
     let timerId;
+    
     function showScore() {
         optionsEl.innerHTML = "";
         nextBtn.style.display = "none";
@@ -272,6 +273,8 @@ const questions = [
 
       
 function startTimer() {
+    timeLeft = 30; 
+    let timerId;
   const timerEl = document.getElementById('timer');
   
   timerEl.textContent = `Time left: ${timeLeft}`;
@@ -323,6 +326,11 @@ function startTimer() {
   
   nextBtn.onclick = () => {
     Question_no++;
+    if(nextBtn.textContent=="Play again?")
+    {
+        startTimer();
+        nextBtn.textContent="Next";
+    }
     currentQuestion=Math.floor(Math.random()*(50));
     while(Question_answered.includes(currentQuestion))
     {
@@ -335,9 +343,8 @@ function startTimer() {
     }
   };
   
-  
-  loadQuestion();
   startTimer();
+  loadQuestion();
   function on() {
     // display overlay
     const turnOn = document.getElementById("overlay");
